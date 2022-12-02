@@ -17,7 +17,7 @@ public enum Turno {
 
     public static Turno getTurnoByIdentificador(char identificador) {
         return Arrays.stream(values())
-                .filter(turnoIdentificador -> turnoIdentificador == identificador)
+                .filter(turno -> turno.identificador == identificador)
                 .findFirst()
                 .orElse(null);
     }

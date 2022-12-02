@@ -1,8 +1,7 @@
-package com.teste.paulocavalcante.apisul.entities;
+package com.teste.paulocavalcante.apisul.DTO;
 
-import jakarta.persistence.Entity;
+import com.teste.paulocavalcante.apisul.entities.UsoDoElevador;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,18 +9,17 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Entity
+
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
-@Table(name = "Elevador")
-public class Elevador {
+public class ElevadorDTO {
+
 
     private Integer idElevador;
 
     private Character nome;
 
-    @OneToMany
     private List<UsoDoElevador> usoDoElevador;
 }

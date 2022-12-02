@@ -1,8 +1,14 @@
 package com.teste.paulocavalcante.apisul.services;
 
+import com.teste.paulocavalcante.apisul.repositories.ElevadorRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.List;
 
 public class ElevadorService implements  IElevadorService{
+
+    @Autowired
+    private ElevadorRepository elevadorRepository;
     @Override
     public List<Integer> andarMenosUtilizado() {
         return null;
