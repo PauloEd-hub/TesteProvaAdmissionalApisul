@@ -1,5 +1,6 @@
 package com.teste.paulocavalcante.apisul.services;
 
+import com.teste.paulocavalcante.apisul.entities.Elevador;
 import com.teste.paulocavalcante.apisul.repositories.ElevadorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -9,9 +10,10 @@ public class ElevadorService implements  IElevadorService{
 
     @Autowired
     private ElevadorRepository elevadorRepository;
+
     @Override
     public List<Integer> andarMenosUtilizado() {
-        return null;
+       return null;
     }
 
     @Override
@@ -38,6 +40,9 @@ public class ElevadorService implements  IElevadorService{
     public List<Character> periodoMaiorUtilizacaoConjuntoElevadores() {
         return null;
     }
+
+
+
 
     @Override
     public float percentualDeUsoElevadorA() {
